@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container {
+  padding: 30px;
+  max-width: 270px;
+  min-height: 400px;
+  margin: 0 auto;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.balance-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.imcome {
+  font-weight: bold;
+  padding: 10px;
+  color: rgb(0, 255, 0);
+}
+.expence {
+  font-weight: bold;
+  padding: 10px;
+  color: rgb(255, 0, 0);
+}
+.form {
+  padding: 20px 10px;
+  height: min-content;
+}
+input[type="text"],
+input[type="number"] {
+  padding: 5px;
+  width: 90%;
+  margin: 5px;
+}
+.add-btn {
+  padding: 10px 20px;
+  margin: 10px;
+  width: 90%;
+  border-radius: 10px;
+  border: none;
+  color: rgb(255, 255, 255);
+  background-color: rgb(5, 161, 5);
+  cursor: pointer;
+}
+.add-btn :hover {
+  background-color: green;
+  color: rgb(255, 252, 229);
+}
+ul {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10 auto;
+}
+li {
+  list-style: none;
+  background-color: rgb(255, 255, 255);
+  margin: 5px;
+  padding: 10px;
+  width: 90%;
+  overflow: hidden;
+  height: 20px;
+}
+.li-item-flex,
+.li-icon-flex {
+  margin-top: 9px;
+  display: flex;
+  justify-content: space-between;
+}
+.edit-tran,
+.delete-icon {
+  color: rgb(0, 174, 255);
+  cursor: pointer;
+}
+.delete-icon {
+  color: red;
+}
+.li-tarsition{
+  transform: translateY(-37px);
+  transition: 0.4s;
+}
+.li-tarsition:hover {
+  transform: translateY(-7px);
+}
+
+.plus {
+  border-bottom: 4px solid rgb(30, 255, 0);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.minus {
+  border-bottom: 4px solid red;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.edit-input {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.edit-input {
+  width: 100%;
+}
+.update-btn{
+  background-color: green;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 3px;
+  padding: 4px;
+  position: relative;
+  right: -5px;
+  cursor: pointer;
+}
