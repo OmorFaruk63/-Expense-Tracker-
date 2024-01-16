@@ -41,7 +41,7 @@ This repository contains the source code for an Expense Tracker app built with R
 
    cd -Expense-Tracker-
 
-   yaen
+   yarn
 
    yarn dev
    ```
@@ -71,7 +71,7 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 2. Clone your forked repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/expense-tracker-app.git
+   git clone https://github.com/OmorFaruk63/-Expense-Tracker-.git
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
