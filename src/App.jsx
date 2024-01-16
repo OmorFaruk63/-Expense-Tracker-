@@ -2,8 +2,8 @@ import "./App.css";
 import Add_Transection from "./components/Add_Transection";
 import GlobalProvaider from "./Context/GlobalContext";
 import TransactionList from "./components/TransactionList";
-import Balance from "./components/balance";
 import TotalBalance from "./components/TotalBalance";
+import Balance from "./components/balance";
 
 function App() {
   return (
