@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { GlobalContext } from "../Context/GlobalContext";
 
-const Balance = () => {
+const ShowBal = () => {
   const { transaction } = useContext(GlobalContext);
   const amount = transaction.map((value) => value.amount);
 
@@ -17,7 +17,6 @@ const Balance = () => {
       return (acc += parseFloat(curr));
     }, 0);
 
-
   return (
     <div className="balance-box">
       <div className="imcome">
@@ -30,4 +29,4 @@ const Balance = () => {
   );
 };
 
-export default Balance;
+export default ShowBal;

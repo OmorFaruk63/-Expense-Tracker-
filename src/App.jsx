@@ -3,14 +3,14 @@ import Add_Transection from "./components/Add_Transection";
 import GlobalProvaider from "./Context/GlobalContext";
 import TransactionList from "./components/TransactionList";
 import TotalBalance from "./components/TotalBalance";
-import Balance from "./components/balance";
+import ShowBal from "./components/ShowBal";
 
 function App() {
   return (
     <GlobalProvaider>
       <div className="container">
         <TotalBalance />
-        <Balance />
+        <ShowBal />
         <Add_Transection />
         <TransactionList />
       </div>
