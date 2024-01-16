@@ -16,34 +16,16 @@ export const reducer_func = (state, action) => {
         ],
       };
 
-    // Transaction (li) To Convart Input
-    case "EDIT_LI_TO_INPUT":
-      return {
-        ...state,
-        transaction: [...state.transaction].map((transaction) => {
-          if (transaction.id === payload) {
-            return { ...transaction, isEdit: true };
-          }
-          return transaction;
-        }),
-      };
-
-    case "EDIT_INPUT_VALUE":
-      return {
-        ...state,
-        transaction: [...state.editInputValue, payload],
-      };
-
-    case "UPDATE_INPUT_LI":
+    case "UPDATE/EDITE_TRANSACTION":
       return {
         ...state,
         transaction: [...state.transaction].map((transaction) => {
           if (transaction.id === payload.id) {
             return {
               ...transaction,
-              text: payload.text,
-              amount: payload.amount,
-              isEdit: false,
+              text: payload.textInput,
+              amount: payload.amountInput,
+              isEdit: !transaction.isEdit,
             };
           }
           return transaction;

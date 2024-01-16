@@ -5,16 +5,16 @@
 }
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
 }
 
 .container {
   padding: 30px;
   max-width: 270px;
   min-height: 400px;
-  margin: 0 auto;
+  margin: 10px auto;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid rgb(151, 151, 151);
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 .balance-box {
@@ -86,7 +86,7 @@ li {
 .delete-icon {
   color: red;
 }
-.li-tarsition{
+.li-tarsition {
   transform: translateY(-37px);
   transition: 0.4s;
 }
@@ -112,7 +112,7 @@ li {
 .edit-input {
   width: 100%;
 }
-.update-btn{
+.update-btn {
   background-color: green;
   color: rgb(255, 255, 255);
   border: none;

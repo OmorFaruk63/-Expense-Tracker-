@@ -1,23 +1,24 @@
 import { createContext, useEffect, useReducer } from "react";
-
-import { reducer_func } from "./../hooks/reducer_func";
+import { reducer_func } from "../reducer/reducer_func";
 
 export const GlobalContext = createContext();
 
 const initialValue = {
-  transaction: [],
+  transaction: JSON.parse(localStorage.getItem("transactionList")) || [],
 };
 
 const GlobalProvaider = ({ children }) => {
   // useReducer Hook
-  const [state, dispatch] = useReducer(
-    reducer_func,
-    JSON.parse(localStorage.getItem("transactionList")) || initialValue
-  );
+  const [state, dispatch] = useReducer(reducer_func, initialValue);
 
-  localStorage.setItem("transactionList", JSON.stringify(state));
+  useEffect(() => {
+    state.transaction.length >= 1 &&
+      localStorage.setItem(
+        "transactionList",
+        JSON.stringify(state.transaction)
+      );
+  }, [state]);
 
-  // localStorage.clear();
   return (
     <GlobalContext.Provider
       value={{
