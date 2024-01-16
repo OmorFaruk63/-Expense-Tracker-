@@ -18,7 +18,7 @@ const TransactionItem = ({ item }) => {
   const sing = amount > 0 ? "+" : "-";
 
   // Update submit
-  function handleUpdateSubmit(e) {
+  function editeUpdate() {
     dispatch({
       type: "UPDATE/EDITE_TRANSACTION",
       payload: { amountInput, textInput, id },
@@ -44,7 +44,7 @@ const TransactionItem = ({ item }) => {
             name="amount"
             type="number"
           />
-          <button onClick={handleUpdateSubmit} className="update-btn">
+          <button onClick={editeUpdate} className="update-btn">
             Save
           </button>
         </span>
@@ -60,7 +60,7 @@ const TransactionItem = ({ item }) => {
                 Delete
                 <MdDelete />
               </span>
-              <span className="edit-tran " onClick={() => handleUpdateSubmit()}>
+              <span className="edit-tran " onClick={() => editeUpdate()}>
                 Edit
                 <MdEdit />
               </span>
