@@ -45,4 +45,33 @@ This repository contains the source code for an Expense Tracker app built with R
 
    yarn dev
    ```
+## Components
 
+### App
+
+The main entry point of the application. It renders the global provider and various components, including `TotalBalance`, `Balance`, `Add_Transection`, and `TransactionList`.
+
+### GlobalProvider
+
+A context provider component that uses the `useReducer` hook to manage the state of transactions. It also utilizes the `useEffect` hook to persist transactions in local storage.
+
+### Reducer Function
+
+Defines the state transitions for the application based on different actions. Actions include adding transactions, deleting transactions, and updating/editing transactions.
+
+### TransactionList
+
+Displays a list of transactions by consuming the global context. It includes conditional rendering for cases where there are no transactions to display.
+
+## Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvement, please follow these steps:
+
+1. Fork the repository on GitHub.
+2. Clone your forked repository to your local machine:
+
+   ```bash
+   git clone https://github.com/your-username/expense-tracker-app.git
+## License
+
+This project is licensed under the [MIT License](LICENSE).
